@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Dosis;
+  src: url(../font/Dosis-Medium-3.ttf);
+}
+body {
+  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.noshow {
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(68, 215, 182);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 87, 34);
+}

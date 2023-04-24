@@ -1,0 +1,49 @@
+//清除外边距塌陷
+@mixin marginTX {
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+    }
+    // overflow: hidden;
+}
+// 单行文本超出长度自动显示省略号
+@mixin One_ellipsis {
+    // 省略号
+    text-overflow: ellipsis;
+    // 超出隐藏
+    overflow: hidden;
+    // 不换行
+    white-space: nowrap;
+}
+// 指定行数省略
+@mixin More_ellipsis {
+    // 设置盒模型
+    display: -webkit-box;
+    // 垂直方向
+    -webkit-box-orient: vertical;
+    // 设置2行
+    -webkit-line-clamp: 2;
+    // 超出隐藏
+    overflow: hidden;
+}
+// 右侧通用样式
+@mixin sameStyle{
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(68, 68, 68, 0.9) !important;
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+// 右侧通用样式2-只有头部和底部
+@mixin sameStyle2{
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 12px;
+    background: rgba(68, 68, 68, 0.9) !important;
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 16px;
+}

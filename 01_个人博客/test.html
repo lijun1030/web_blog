@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 3000px;
+        }
+        a{
+            text-decoration: transparent;
+            border-bottom: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bgc">
+        <a href="#">1111111111111</a>
+    </div>
+</body>
+<script>
+    //启动滚轮上下滚控制置顶按钮样式的监听事件；
+Uptop_wheel();
+//置顶按钮上滚下滚控制显示样式的方法
+function Uptop_wheel() {
+    var uptop2 = document.querySelector(".bgc");
+    // 添加滚轮上线滚动监听事件
+    window.addEventListener("wheel", function (e) {
+        if (e.wheelDelta) {
+            // console.log("上滚显示");
+            uptop2.classList.remove("noshow");
+        } else {
+            // console.log("下滚隐藏");
+            uptop2.classList.add("noshow");
+        }
+    });
+}
+alert(Boolean(1))
+</script>
+</html>

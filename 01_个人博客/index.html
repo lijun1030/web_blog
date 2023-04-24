@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/icon1.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/Common.css" />
+        <link rel="stylesheet" href="./iconfont/iconfont.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <script src="./js/index.js" defer></script>
+        <title>博客小站</title>
+    </head>
+    <body>
+        <!-- 总体内容 -->
+        <div class="basis" id="basis">
+            <!-- 顶部导航栏 -->
+            <div class="nav_bar noshow">
+                <div class="navContent">
+                    <div class="navselect">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/icon1.png" alt="" />
+                                    <span>木梨</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="iconfont icon-magic"></i>
+                                    <span>技术交流</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="iconfont icon-file-code1"></i>
+                                    <span>源码分享</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="iconfont icon-book-full"></i>
+                                    <span>程序人生</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="iconfont icon-timer"></i>
+                                    <span>时间轴</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="iconfont icon-info_circle_fill"></i>
+                                    <span>关于</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div class="search_box">
+                            <i class="iconfont icon-fangdajing3"></i>
+                            <input type="text" placeholder="搜索....." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 顶部背景 -->
+            <div class="top">
+                <!-- <img src="./img/background.jpg" alt="背景图"> -->
+            </div>
+            <!-- 整体文字内容 -->
+            <div class="container">
+                <!-- 头部感言 -->
+                <div class="heard_gy">
+                    <div class="speech">
+                        <div class="speech_content">
+                            <p class="title">远&nbsp;&nbsp;&nbsp;&nbsp;行</p>
+                            <p class="subtitle">时间白驹过隙，转瞬即逝，可这种心情很长，如高山大川，连绵不绝。</p>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <a href="javascript:arrow()"><i class="iconfont icon-arrow-down"></i></a>
+                    </div>
+                </div>
+                <!-- 中间内容项 -->
+                <div class="content" id="content">
+                    <!-- 内容展示项 -->
+                    <div class="content_show">
+                        <!-- 左边块内容 -->
+                        <div class="left-black">
+                            <!-- 左侧Item内容 -->
+                            <div class="left_items">
+                                <div class="item">
+                                    <div class="itemCont">
+                                        <h2>Java阻塞队列与非阻塞队列</h2>
+                                        <p>
+                                            阻塞和非阻塞指的是调用者在等待返回结果时的状态。阻塞时，在调用结果返回前，当前线程会被挂起，并在得到结果之后返回。非阻塞时，如果不能立刻得到结果，则该调用者不会阻塞当前线程。
+                                        </p>
+                                        <div class="other">
+                                            <div class="other_left">
+                                                <span>2023-03-02</span>
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>Netty</span></a
+                                                >
+                                                <a href="#"><i class="iconfont icon-tags-fill"></i><span>Work</span></a>
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>WebSocket</span></a
+                                                >
+                                            </div>
+                                            <div class="look">
+                                                <a href="#">阅读全文</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="itemImg">
+                                        <a href="#"><img src="./img/life-five.jpg" /></a>
+                                    </div>
+                                    <div class="itemCont">
+                                        <h2>mongodb索引及运用</h2>
+                                        <p>mongodb 查看、创建、修改、删除索引。</p>
+                                        <div class="other">
+                                            <div class="other_left">
+                                                <span>2022-08-16</span>
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>MongoDB</span></a
+                                                >
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>MySQL</span></a
+                                                >
+                                            </div>
+                                            <div class="look">
+                                                <a href="#">阅读全文</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="itemImg">
+                                        <a href="#"><img src="./img/mongodb-jq.jpg" /></a>
+                                    </div>
+                                    <div class="itemCont">
+                                        <h2>Docker搭建MongoDB副本集</h2>
+                                        <p>Docker部署mongoDB副本集，MongoDB 4.0 以后开始支持事务。</p>
+                                        <div class="other">
+                                            <div class="other_left">
+                                                <span>2022-12-24</span>
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>程序人生</span></a
+                                                >
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>MongoDB</span></a
+                                                >
+                                            </div>
+                                            <div class="look">
+                                                <a href="#">阅读全文</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="itemCont">
+                                        <h2>面试官：Spring和SpringBoot有哪些区别？</h2>
+                                        <p>
+                                            我们可以说Spring
+                                            Boot只是Spring本身的扩展，使开发，测试和部署更加方便，但面试这么回答面试官不答应的...。
+                                        </p>
+                                        <div class="other">
+                                            <div class="other_left">
+                                                <span>202-08-16</span>
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>面试题</span></a
+                                                >
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>SpringBoot</span></a
+                                                >
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>Spring</span></a
+                                                >
+                                            </div>
+                                            <div class="look">
+                                                <a href="#">阅读全文</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="itemImg">
+                                        <a href="#"><img src="./img/MySQL.jpg" /></a>
+                                    </div>
+                                    <div class="itemCont">
+                                        <h2>MySQL 递归查询</h2>
+                                        <p>
+                                            MySQL
+                                            递归查询,创建一个存储过程实现,查询子节点，父节点只需要调用这个存储过程即可。
+                                        </p>
+                                        <div class="other">
+                                            <div class="other_left">
+                                                <span>2021-11-10</span>
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>MySQL</span></a
+                                                >
+                                                <a href="#"
+                                                    ><i class="iconfont icon-tags-fill"></i><span>MongoDB</span></a
+                                                >
+                                            </div>
+                                            <div class="look">
+                                                <a href="#">阅读全文</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 左侧分页 -->
+                            <div class="page_number">
+                                <a href="#" class="noshow1"><i class="iconfont icon-zuojiantou"></i> 上一页</a>
+                                <span>1 / 5</span>
+                                <a href="#">下一页 <i class="iconfont icon-xuanxiangqiayoujiantou"></i></a>
+                            </div>
+                        </div>
+                        <!-- 右边导航 -->
+                        <div class="right-nav">
+                            <!-- 关于我 -->
+                            <div class="myInfo">
+                                <div class="title">
+                                    <a href="#">
+                                        <i class="iconfont icon-igw-l-role"></i>&nbsp;
+                                        <span>关于我</span>
+                                    </a>
+                                </div>
+                                <div class="myImg"><img src="./img/my.jpg" alt="" /></div>
+                                <p>木梨</p>
+                                <p>微信：lijun_901030</p>
+                            </div>
+                            <!-- 联系我 -->
+                            <div class="contact_me">
+                                <div class="title">
+                                    <i class="iconfont icon-lianxiren"></i>&nbsp;
+                                    <span>联系我</span>
+                                </div>
+                                <div class="contact_way">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/github.png" alt="" />
+                                                <p>GitHub</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/gitee.png" alt="" />
+                                                <p>Gitee</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/QQ.png" alt="" />
+                                                <p>QQ</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/Qqun.png" alt="" />
+                                                <p>QQ群</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 最新文章 -->
+                            <div class="newInfo">
+                                <div class="title">
+                                    <i class="iconfont icon-calendar-clock"></i>&nbsp;
+                                    <span>最新文章</span>
+                                </div>
+                                <div class="newItems">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div>
+                                                    <span>2023-03-02</span>
+                                                    <span>MongoDB</span>
+                                                </div>
+                                                <p>Java连接MongoDB聚合分组查询。</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div>
+                                                    <span>2022-01-18</span>
+                                                    <span>MongoDB</span>
+                                                </div>
+                                                <p>netty websocket ssl Received fatal alert</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div>
+                                                    <span>2021-03-02</span>
+                                                    <span>程序人生</span>
+                                                </div>
+                                                <p>mongodb索引及运用。</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 文章分类 -->
+                            <div class="articleClass">
+                                <div class="title">
+                                    <i class="iconfont icon-24gf-folderOpen"></i>&nbsp;
+                                    <span>文章分类</span>
+                                </div>
+                                <div class="articleItems">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span>Docker</span>
+                                                <span>[ 8 ]</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Java实例</span>
+                                                <span>[ 2 ]</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Linux</span>
+                                                <span>[ 1 ]</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>MangoDB</span>
+                                                <span>[ 3 ]</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>MySQL</span>
+                                                <span>[ 2 ]</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Redis</span>
+                                                <span>[ 1 ]</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Vue</span>
+                                                <span>[ 1 ]</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 热门标签 -->
+                            <div class="hotLabels">
+                                <div class="title">
+                                    <i class="iconfont icon-tags"></i>&nbsp;
+                                    <span>热门标签</span>
+                                </div>
+                                <div class="hotLabelsItems">
+                                    <a href="#">Docker</a>
+                                    <a href="#">Elasticsearch</a>
+                                    <a href="#">Eureka</a>
+                                    <a href="#">FFmpeg</a>
+                                    <a href="#">FTP</a>
+                                    <a href="#">FastDFS</a>
+                                    <a href="#">Feign</a>
+                                    <a href="#">Https</a>
+                                    <a href="#">Iview</a>
+                                    <a href="#">Linux</a>
+                                    <a href="#">MongoDB</a>
+                                    <a href="#">MySQL</a>
+                                    <a href="#">Nginx</a>
+                                </div>
+                            </div>
+                            <!-- 友链 -->
+                            <div class="friendlyLinks">
+                                <div class="title">
+                                    <i class="iconfont icon-lianjie"></i>&nbsp;
+                                    <span>友链</span>
+                                </div>
+                                <div class="linksItems">
+                                    <a href="http://124.220.34.141/" target="_blank">
+                                        <i class="iconfont icon-youjiantou1"></i>
+                                        <span>博客小站</span>
+                                    </a>
+                                    <a href="https://www.logosc.cn/logo/favicon" target="_blank">
+                                        <i class="iconfont icon-youjiantou1"></i>
+                                        <span>Icon制作</span>
+                                    </a>
+                                    <a href="https://swiper.com.cn" target="_blank">
+                                        <i class="iconfont icon-youjiantou1"></i>
+                                        <span>Swiper中文网</span>
+                                    </a>
+                                    <a href="https://caniuse.com" target="_blank">
+                                        <i class="iconfont icon-youjiantou1"></i>
+                                        <span>属性兼容查询</span>
+                                    </a>
+                                    <a href="https://tool.lu" target="_blank">
+                                        <i class="iconfont icon-youjiantou1"></i>
+                                        <span>在线工具箱</span>
+                                    </a>
+                                    <a href="https://www.likejay.cn" target="_blank">
+                                        <i class="iconfont icon-youjiantou1"></i>
+                                        <span>Jay资源库</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 页脚说明 -->
+                <div class="footer">
+                    <div class="WebInstructions">
+                        <p>本站使用前端三件套编写，还有诸多不足，后续会持续更新，感谢！</p>
+                        <a href="https://beian.miit.gov.cn/#/Integrated/index">晋ICP备2022011357号-@待定</a>
+                        <p>Copyright © 2023 - 2024 | Powered by muli</p>
+                        <p><i class="iconfont icon-aliyun"></i> 阿里云提供云存储服务器</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 置顶按钮 -->
+        <div class="upTop" id="upTop">
+            <a id="s-top" href="javascript:uptop()"><i class="iconfont icon-arrow-up"></i></a>
+        </div>
+    </body>
+</html>

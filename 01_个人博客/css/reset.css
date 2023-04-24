@@ -1,0 +1,42 @@
+* {
+    /* 取消内外边距 */
+    margin: 0;
+    padding: 0;
+    /* 盒子定宽高 */
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    /* 去除列表项前面的修饰符 */
+    list-style: none;
+}
+
+input,
+button {
+    /* 去除自带的边框，太丑了。。。 */
+    border: none;
+    /* 去除默认的颜色轮廓-鼠标选中效果 */
+    outline: none;
+}
+
+a {
+    /* 取消a标签自带的下划线 */
+    text-decoration: none;
+    /* 解决移动端a标签点击出现的背景颜色问题*/
+    -webkit-tap-highlight-color: transparent;
+/* 
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none; */
+}
+/* 清除元素前后浮动影响，防止元素本身塌陷，导致后续元素排版混乱 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
